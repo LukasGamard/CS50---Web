@@ -1,0 +1,102 @@
+.container {
+   max-width: 1280px;
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+   padding: 0 20px;
+}
+
+.btn {
+   display: inline-block;
+   background: $dark-color;
+   color: #fff;
+   font-size: 16px;
+   padding: 14px 20px;
+   border: none;
+   cursor: pointer;
+}
+
+.box {
+   float: left;
+   padding: 50px;
+   text-align: center;
+   width: 33.3%;
+}
+
+.bg-light {
+   background: $light-color;
+   color: $dark-color;
+}
+
+.bg-primary {
+   background: $primary-color;
+   color: $dark-color;
+}
+
+.about-entry {
+   display: flex;
+   height: 400px;
+   margin-top: 40px;
+
+   img {
+      width: 40%;
+      //min-height: 100%;
+      height: 400px;
+      float: left;
+   }
+   
+   .content {
+      background: $light-color;
+      color: $dark-color;
+      padding: 70px 20px;
+      text-align: center;
+      height: 400px;
+      width: 60%;
+      float: right;
+
+      p {
+         padding-top: 40px;
+      }
+
+      ul {
+         padding-top: 20px;   
+      }
+
+      a {         
+         &:hover {
+            color: $primary-color;
+         }
+      }
+   }
+}
+.drop-down {
+   background: $light-color;
+   color: $dark-color;
+   padding-bottom: 20px;
+
+   a {
+      padding: 20px 0px;
+      
+      &:hover {
+      color: $primary-color;
+      cursor: pointer;
+      }
+   }
+}
+
+.drop-content {
+   display: flex;
+
+   img {
+      float: left;
+      max-width: 400px;
+      max-height: 400px;
+   }
+
+   p { 
+      
+      float: right;
+      width: 60%;
+      padding: 20px;
+   }
+}

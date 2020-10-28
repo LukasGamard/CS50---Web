@@ -1,0 +1,135 @@
+@import 'config';
+@import 'utilities';
+
+
+// reset
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+// styling
+body {
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.6;
+   background: $primary-color;
+}
+
+a {
+   text-decoration: none;
+   color: $dark-color;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   width: 100%;
+}
+
+
+// Main navbar
+#main-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: $dark-color;
+   color: $light-color;
+
+   h1 {
+      float: left;
+      height: 100%;
+   }
+
+   ul {
+      display: flex;
+      float: right;  
+      border: none;  
+      height: 100%;  
+   }
+   
+   li {
+      float: left;        
+   }
+   
+   a {
+      display: block;
+      text-transform: uppercase;
+      padding: 15px;
+      text-align: center;
+      color: $light-color;
+
+      &:hover, &.current {
+         background: lighten($dark-color, 10%);
+      }
+   }
+}
+
+#showcase {
+   background: url("../img/winding_path.jpg") no-repeat center center/cover;
+   height: 600px;
+   
+   .showcase-content {
+      text-align: center; 
+      
+      h1 {
+         font-size: 40px;
+         color: $dark-color;
+         padding-top: 118px;
+      }
+
+      p {
+         color: #fff;
+         padding-top: 54px; 
+      }
+      
+   }
+}
+
+#general-info {
+   display: flex;
+   height: 400px;
+
+   .info-img {
+      background: url("../img/showcase.png") no-repeat bottom center/cover;
+      width: 50%;
+      min-height: 100%;
+      float: left;
+   }
+
+   .info-content {
+      text-align: center;
+      width: 50%;
+      height: 100%;
+      padding: 50px 30px;
+      background: $dark-color;
+      color: white;
+      float: right;
+   }
+
+   p {
+      padding-top: 30px;   
+   }
+}
+
+#features {
+   display: flex;
+}
+
+#main-footer {
+   background: $dark-color;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   height: 60px;
+   width: 100%;
+   position: absolute;
+   bottom: auto;
+}
+
+#projects {
+   min-height: 100vh;
+   background: $light-color;
+}
